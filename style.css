@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap');
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+:root {
+    --Soft-red : hsl(7, 99%, 70%) ;
+    --Yellow : hsl(51, 100%, 49%) ;
+    --Dark-cyan : hsl(167, 40%, 24%) ;
+    --Dark-blue : hsl(198, 62%, 26%) ;
+    --Dark-mod-cyan : hsl(168, 34%, 41%) ;
+    --Very-dark-blue : hsl(212, 27%, 19%) ;
+    --Very-dark-grayish-blue : hsl(213, 9%, 39%) ;
+    --Dark-grayish-blue : hsl(232, 10%, 55%) ;
+    --Grayish-blue : hsl(210, 4%, 67%) ;
+    --White : hsl(0, 0%, 100%) ;
+    --Font : 18px ;
+    --Barlow-font : 'Barlow', sans-serif ;
+    --Barlow-weight : 600 ;
+    --Fraunces-font : 'Fraunces', serif ;
+    --Fraunces-fweight : 700 ;
+    --Fraunces-sweight : 900 :
+}
+body {
+    font-size: var(--Font) ;
+    width: 100wh;   
+}
+header {
+    background-image: url(images/desktop/image-header.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 100wh;
+    height: 110vh;
+}
+header > nav {
+    height: 10vh;
+    display: flex ;
+    position: relative;
+}
+header > nav > .sunny {
+    position: absolute ;
+    top: 50%;
+    left: 3%;
+}
+header > nav > .nav_list , header > nav > .ham{
+    display: flex ;
+    
+    position: absolute ;
+    right: 5%;
+    top: 25%;
+}
+.ham {
+    margin-top: 15px;
+    visibility: hidden;
+}
+header > nav > .nav_list > div {
+    width: 110px;
+    height: 40px;
+    border-radius:75px ;
+    margin-top: 7px;
+}
+header > nav > .nav_list > div > a {
+    display: flex ;
+    justify-content: center;
+    margin-top: 10%;
+    text-decoration: none;
+    font-family: var(--Barlow-font);
+    font-weight: var(--Barlow-weight);
+    font-size: 14px;
+    color: var(--White);
+}
+header > nav > .nav_list > .Cn {
+    background-color: var(--White);
+}
+header > nav > .nav_list > .Cn > a {
+    color: var(--Dark-blue);
+    font-family: var(--Fraunces-font);
+    font-weight: var(--Fraunces-fweight);
+}
+main > h1  {
+    font-family: var(--Fraunces-font);
+    font-weight: var(--Fraunces-sweight);
+    font-size: 2.7rem ;
+    letter-spacing: 7px;
+    text-align: center ;
+    margin-top: 7%;
+    color: var(--White);
+}
+main > img {
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%,-50%);
+}
+.Second {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.Second > .Transform {
+    width: 61%;
+    margin: 0 auto;
+    margin-top: 20%;
+}
+.Second > .IMG1 > img, .Second > .IMG2 > img, .Second > .IMG3 > img, .Second > .IMG4 > img  {
+    width: 100%;
+    height: 80vh;
+}
+.Second > .Transform > h2 {
+    font-family: var(--Fraunces-font);
+    font-weight: 900;
+    color: var(--Very-dark-blue);
+    font-size: 2.3rem;
+    width: auto;
+}
+.Second > .Transform > p {
+    font-family: var(--Barlow-font);
+    font-size: 1.1rem;
+    color: var(--Dark-grayish-blue);
+    width: 108%;
+    line-height: 1.5;
+    margin-top: 8%;
+}
+.Second > .Transform > .Learn {
+    font-family: var(--Fraunces-font);
+    color: var(--Very-dark-blue);
+    font-weight: 900;
+    font-size: 1rem;
+    position: relative;
+}
+.Learn::after {
+    position: absolute;
+    content: "";
+    z-index: -1;
+    width: 131px;
+    height: 9px;
+    bottom: 0%;
+    left: -2%;
+    border-radius: 39px;
+    background: var(--Yellow);
+    opacity: 0.3;
+}
+.IMG2 , .IMG3 , .IMG4 {
+    margin-top: -0.8%;
+}
+.Second > .IMG3 , .Second > .IMG4 {
+    position: relative;
+}
+.Second > .IMG3 > .Gr_Text , .Second > .IMG4 > .Ph_Text{
+    width: 58%;
+    position: absolute;
+    bottom: 15%;
+    left: 23%;
+}
+.Second > .IMG3 > .Gr_Text > H2 ,.Second > .IMG4 > .Ph_Text>h2 {
+    text-align: center;
+    margin-bottom: 5%;
+    font-family: var(--Fraunces-font);
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: var(--Dark-cyan);
+}
+.Second > .IMG3 > .Gr_Text > p ,.Second > .IMG4 > .Ph_Text > p {
+    text-align: center;
+    font-family: var(--Barlow-font);
+    font-size: 1rem;
+    color: var(--Dark-cyan);
+    line-height: 1.5;
+}
+.Second > .IMG4 > .Ph_Text>h2 {
+    color: var(--Dark-blue);
+}
+.Second > .IMG4 > .Ph_Text > p {
+    counter-reset: var(--Very-dark-blue);
+}
+.Personnes {
+    min-height: 81vh;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+.Cl {
+    text-align: center;
+    padding-top: 7%;
+    letter-spacing: 5px;
+    font-family: var(--Fraunces-font);
+    font-weight:700;
+    font-size: 1.2rem;
+    color: var(--Dark-grayish-blue);
+}
+.Personnes > .Personne {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+.Personnes > .Personne > img {
+    margin-left: 43%;
+    margin-bottom: 10%;
+    border-radius: 50%;
+    width: 15%;
+}
+.Personnes > .Personne > p {
+    text-align: center;
+    margin-left: 10%;
+    font-family: var(--Barlow-font);
+    font-weight: var(--Barlow-weight);
+    color: var(--Dark-grayish-blue);
+    line-height: 1.5;
+    font-size: 1.1rem;
+    width: 80%;
+}
+.Personnes > .Personne > .Container {
+    margin-top: 9%;
+}
+.Personnes > .Personne > .Container > h2 {
+    font-size: var(--Font);
+    font-family: var(--Fraunces-font);
+    font-weight: 900;
+    color: var(--Very-dark-blue);
+    text-align: center;
+}
+.Personnes > .Personne > .Container > p{
+    margin-top: 2%;
+    text-align: center;
+    font-family: var(--Barlow-font);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--Grayish-blue);
+}
+.IMG {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.IMG > img {
+    width: 100%;
+}
+footer {
+    height: 50vh;
+    background: hsl(168, 34%, 70%);
+    text-align: center;
+    position: relative;
+}
+footer > .footer_list > img {
+    margin-top: 5%;
+    transform: scale(1.1);
+    filter: invert(60%) sepia(23%) saturate(923%) hue-rotate(116deg) brightness(93%) contrast(90%);
+}
+footer > .footer_list > .Second_List > ul {
+    display: flex;
+    list-style: none;
+    margin-top: 3%;
+    justify-content: center;
+}
+footer > .footer_list > .Second_List > ul > a {
+    text-decoration: none;
+    margin-left: 3%;
+    font-family: var(--Barlow-font);
+    font-weight: 600;
+    color: var(--Dark-mod-cyan);
+}
+footer > .footer_list > .IMG_footer {
+    position: absolute;
+    width: 100%;
+    bottom: 20%;
+}
+footer > .footer_list > .IMG_footer > a {
+    width: 150%;
+    padding-left: 1%;
+}
+@media (max-width:678px) {
+    .Second > .Transform {
+        max-height: 50vh;
+        max-width: 50wh;
+    }
+    .Second > .Transform > h2 {
+        font-size: 1.8rem;
+    }
+    .Second > .IMG3 > .Gr_Text ,.Second > .IMG4 > .Ph_Text {
+        transform: translate(0%,20%);
+    }
+    footer {
+        height: 30vh;
+    }
+}
+@media (max-width : 599px) {
+    .Personnes {
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    .IMG {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .ham {
+        visibility: visible;
+    }
+    header > nav > .nav_list > div > a  , header > nav > .nav_list > div {
+        visibility: hidden;
+    }
+    .Transform {
+        transform: translate(0%,-15%);
+    }
+    .Second > .Transform > h2 {
+        font-size: 2.1rem;
+    }
+     .Second{
+        grid-template-columns: repeat(1,1fr);
+        min-height: 100vh;
+    }
+}
